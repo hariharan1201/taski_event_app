@@ -97,7 +97,6 @@ class AddEventEventFragment : BaseAppFragment() {
                     if(mode){
                         viewModel.addEvent(
                             Event(
-                                id = 0,
                                 title = titleFld.text.toString(),
                                 description = descriptionFld.text.toString(),
                                 date = dateFld.text.toString(),
