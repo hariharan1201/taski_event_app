@@ -40,13 +40,14 @@ class AddEventEventFragment : BaseAppFragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.apply {
-            mode = args.event == null
+            mode = args.event?.title?.isEmpty() ?: true
 
             if(mode){
                 getString(R.string.add_event).apply {
                     backBtn.text = this
                     addEvent.text = this
                 }
+                args.event?.let { dateFld.setText(it.date) }
             }
             else{
                 getString(R.string.edit_event).apply { backBtn.text = this }

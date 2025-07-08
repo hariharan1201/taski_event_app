@@ -28,6 +28,7 @@ class EventFragment : BaseAppFragment() {
     private val viewModel: EventViewModel by viewModels()
     private lateinit var binding: FragmentEventBinding
     private var events : List<Event>? = null
+    private var pickerDate : String = ""
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -73,10 +74,13 @@ class EventFragment : BaseAppFragment() {
             calendar.setOnDateChangeListener { _, year, month, date ->
                 String.format("%02d/%02d/%04d", date, month + 1, year).apply {
                     mapData(this, events ?: emptyList())
+                    pickerDate = this
                 }
             }
 
-            addEvent.setOnClickListener { moveToEditEvent(null) }
+            addEvent.setOnClickListener { moveToEditEvent(
+                Event(title = "", description = "", date = pickerDate, time = "")
+            ) }
         }
     }
 
