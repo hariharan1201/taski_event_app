@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="zen_primary">#7DCEA0</color>
+    <color name="zen_accent">#FFD166</color>
+    <color name="zen_background">#F9FAFB</color>
+    <color name="zen_surface">#D5E8D4</color>
+    <color name="zen_on_primary">#FFFFFF</color>
+    <color name="zen_on_background">#333333</color>
+    <color name="zen_on_background_opaque">#3333331A</color>
+    <color name="zen_secondary">#B3E5C9</color>
+    <color name="zen_error">#FF6B6B</color>
+    <color name="zen_fontColor">#333333</color>
+    <color name="tinted_black">#25252530</color>
+</resources>

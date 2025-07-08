@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Taski Event</string>
+    <string name="add_event">Add Event</string>
+    <string name="view_events">Upcoming Events</string>
+    <string name="events">All Events</string>
+    <string name="title">Title</string>
+    <string name="description">Description</string>
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+    <string name="event_added">Event Added</string>
+    <string name="please_choose_a_date_first">Please choose a date first</string>
+    <string name="title_required">Title Required</string>
+    <string name="description_required">Description Required</string>
+    <string name="date_required">Date Required</string>
+    <string name="time_required">Time Required</string>
+    <string name="edit_event">Edit Event</string>
+    <string name="update_event">Update Event</string>
+    <string name="no_events">No Events</string>
+    <string name="event_updated">Event Updated</string>
+    <string name="all_events">All Events</string>
+    <string name="event_removed">Event Removed</string>
+</resources>

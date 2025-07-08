@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/eventFragment">
+
+    <fragment
+        android:id="@+id/eventFragment"
+        android:name="com.practise.taski_event.frags.event.view.EventFragment"
+        android:label="fragment_event"
+        tools:layout="@layout/fragment_event" >
+        <action
+            android:id="@+id/action_eventFragment_to_addEventEventFragment"
+            app:destination="@id/addEventEventFragment" />
+        <action
+            android:id="@+id/action_eventFragment_to_allEventFragment"
+            app:destination="@id/allEventFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addEventEventFragment"
+        android:name="com.practise.taski_event.frags.eventdialog.view.AddEventEventFragment"
+        android:label="fragment_event_dialog"
+        tools:layout="@layout/fragment_add_event" >
+        <argument
+            android:name="event"
+            app:argType="com.practise.taski_event.data.Event"
+            app:nullable="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/allEventFragment"
+        android:name="com.practise.taski_event.frags.allevent.view.AllEventFragment"
+        android:label="fragment_all_event"
+        tools:layout="@layout/fragment_all_event" >
+        <action
+            android:id="@+id/action_allEventFragment_to_addEventEventFragment"
+            app:destination="@id/addEventEventFragment" />
+    </fragment>
+
+</navigation>
